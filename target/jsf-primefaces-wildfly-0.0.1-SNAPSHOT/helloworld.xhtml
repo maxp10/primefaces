@@ -11,12 +11,15 @@
 <h:body>
   <h:form>
 
-    <p:panel header="PrimeFaces">
+    <p:panel header="PrimeFaces on OpenShift">
       <h:panelGrid columns="2" cellpadding="4">
-        <h:outputText value="Nome: " />
+      
+        <h:outputText value="running on #{helloWorld.ip}" />
+      
+        <h:outputText value="Nome" />
         <p:inputText value="#{helloWorld.firstName}" />
 
-        <h:outputText value="Cognome: " />
+        <h:outputText value="Cognome" />
         <p:inputText value="#{helloWorld.lastName}" />
 
         <p:commandButton value="Conferma" update="greeting"
@@ -28,6 +31,7 @@
       modal="true" resizable="false">
       <h:panelGrid id="greeting" columns="1" cellpadding="4">
         <h:outputText value="#{helloWorld.showGreeting()}" />
+        <h:outputText value="#{helloWorld.ip}" />
       </h:panelGrid>
     </p:dialog>
 

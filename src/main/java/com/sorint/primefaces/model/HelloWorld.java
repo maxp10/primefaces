@@ -30,7 +30,7 @@ public class HelloWorld {
 	}
 
 	public String showGreeting() {
-		return "Ciao " + firstName + " " + lastName;
+		return "Search " + firstName + " " + lastName;
 	}
 
 	public String getIp1() {

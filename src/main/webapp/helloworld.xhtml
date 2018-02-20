@@ -17,18 +17,18 @@
         <h:outputText value="running on #{helloWorld.ip}" />
         <br/>
       
-        <h:outputText value="Nome" />
+        <h:outputText value="Name" />
         <p:inputText value="#{helloWorld.firstName}" />
 
-        <h:outputText value="Cognome" />
+        <h:outputText value="UserID" />
         <p:inputText value="#{helloWorld.lastName}" />
 
-        <p:commandButton value="Conferma" update="greeting"
+        <p:commandButton value="Confirm" update="greeting"
           oncomplete="PF('greetingDialog').show()" />
       </h:panelGrid>
     </p:panel>
 
-    <p:dialog header="Greeting" widgetVar="greetingDialog"
+    <p:dialog header="Stored" widgetVar="greetingDialog"
       modal="true" resizable="false">
       <h:panelGrid id="greeting" columns="1" cellpadding="4">
         <h:outputText value="#{helloWorld.showGreeting()}" />

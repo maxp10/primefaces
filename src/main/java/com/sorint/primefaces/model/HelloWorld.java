@@ -4,13 +4,11 @@ import javax.faces.bean.ManagedBean;
 
 import com.sorint.primefaces.utility.ServiceIp;
 
-//import com.sorint.primefaces.utility.ServiceIp;
-
 @ManagedBean
 public class HelloWorld {
 
-	private String firstName = "Mario";
-	private String lastName = "Rossi";
+	private String firstName = "";
+	private String lastName = "";
 	private String ip = "";
 
 	public String getFirstName() {
